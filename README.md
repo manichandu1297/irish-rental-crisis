@@ -35,18 +35,16 @@ This project builds a complete data platform that:
 ## 📊 Data Sources
 
 | Source | Dataset | Coverage |
-|---|---|---|
-| RTB / CSO PxStat | RIQ02 — Rent Index by Quarter | 2007–2025 |
-| RTB / CSO PxStat | RIA02 — Rent Index by Area | 2007–2025 |
-| RTB / CSO PxStat | RIH02 — Rent by Property Type & Bedrooms | 2007–2025 |
+|--------|---------|----------|
+| RTB / CSO PxStat | RIQ02 — Quarterly Rent Index | 2015–2025 |
+| RTB / CSO PxStat | RIA02 — Annual Rent Index | 2008–2024 |
 | CSO PxStat | HAP10 — HAP Properties by Local Electoral Area | 2015–2022 |
 | CSO PxStat | TRS17 — Median Landlord Income by Local Authority | 2019 |
-| CSO | Population, Employment, Earnings by County | Various |
-| Data.gov.ie | Planning Permissions & Housing Completions | Various |
-| Transport Data | DART, Luas, Bus Stop Locations | Current |
-| PDF Documents | RTB Annual Reports, Housing for All, Daft Reports | Various |
-
----
+| CSO PxStat | TRS18 — Median Landlord Income by Local Electoral Area | 2019 |
+| CSO PxStat | TRS21 — Rent as % of Disposable Income by Local Authority | 2019 |
+| CSO PxStat | TRS22 — Rent as % of Disposable Income by Local Electoral Area | 2019 |
+| CSO PxStat | FY001 — Population by County | Census 2011, 2016, 2022 |
+```
 
 ## 🏗️ Project Architecture
 
