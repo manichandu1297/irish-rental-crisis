@@ -44,7 +44,6 @@ This project builds a complete data platform that:
 | CSO PxStat | TRS21 — Rent as % of Disposable Income by Local Authority | 2019 |
 | CSO PxStat | TRS22 — Rent as % of Disposable Income by Local Electoral Area | 2019 |
 | CSO PxStat | FY001 — Population by County | Census 2011, 2016, 2022 |
-```
 
 ## 🏗️ Project Architecture
 
