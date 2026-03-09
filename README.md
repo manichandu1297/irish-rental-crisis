@@ -118,7 +118,7 @@ irish-rental-crisis/
 
 - **Target variable:** Median rent (€) by county, property type, and number of bedrooms
 - **Algorithms:** XGBoost (primary), Random Forest (benchmark)
-- **Features:** Location, property type, bedrooms, year, quarter, population density, employment rate, housing completions, transport proximity
+- **Features:** Location, property type, bedrooms, year, quarter, population by county, HAP concentration by area, landlord income, affordability index
 - **Success criteria:** R² ≥ 0.80, MAE within 10% of median rent
 
 ---
