@@ -17,6 +17,4 @@
 **Outcome:** Project foundation established. Repository live on GitHub.
 ```
 
-4. Commit message:
-```
-docs: add progress log — Day 1 project setup
+
