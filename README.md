@@ -208,7 +208,7 @@ openai
 
 ## 👤 Author
 
-**[Your Name]**
+**Mani Chandu**
 MSc Data Analytics | Based in Ireland
 [LinkedIn](#) | [GitHub](#)
 
