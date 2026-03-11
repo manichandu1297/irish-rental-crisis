@@ -48,13 +48,17 @@ This project builds a complete data platform that:
 ## 🏗️ Project Architecture
 
 ```
-Phase 1 — Data Collection & Cleaning
-Phase 2 — SQL Database Design (PostgreSQL)
-Phase 3 — Exploratory Data Analysis & Statistical Analysis
-Phase 4 — Machine Learning (Rent Price Prediction)
-Phase 5 — Power BI Dashboard (4 pages)
-Phase 6 — Streamlit Web App (4 pages, deployed)
-Phase 7 — RAG Chatbot (LangChain + ChromaDB on Irish housing PDFs)
+| Phase | Status |
+|---|---|
+| Phase 1 — Data Collection | ✅ Complete |
+| Phase 2 — Data Cleaning & Combining | 🔄 In Progress |
+| Phase 3 — EDA & Statistical Analysis | ⏳ Pending |
+| Phase 4 — Feature Engineering & Preprocessing | ⏳ Pending |
+| Phase 5 — SQL Warehouse & Business Queries | ⏳ Pending |
+| Phase 6 — Machine Learning | ⏳ Pending |
+| Phase 7 — Power BI Dashboard | ⏳ Pending |
+| Phase 8 — Streamlit App | ⏳ Pending |
+| Phase 9 — RAG Chatbot | ⏳ Pending |
 ```
 
 ---
@@ -72,7 +76,8 @@ irish-rental-crisis/
 │   ├── 02_data_cleaning.ipynb
 │   ├── 03_eda_analysis.ipynb
 │   ├── 04_feature_engineering.ipynb
-│   └── 05_ml_model.ipynb
+│   ├── 05_sql_warehouse.ipynb
+│   └── 06_ml_model.ipynb
 ├── sql/
 │   ├── schema.sql            # PostgreSQL schema definition
 │   ├── load_data.sql         # Data loading scripts
