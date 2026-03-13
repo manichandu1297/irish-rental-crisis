@@ -35,4 +35,21 @@
 
 **Outcome:** Two core rent datasets loaded, inspected, and sense-checked. Notebook 01 structure established.
 
+## Day 3 — 12 March 2026
+**Phase:** 1 — Data Collection (Complete)
+
+**What I did:**
+- Finalised and documented Notebook 01 — Data Collection & Ingestion
+- Downloaded remaining 6 datasets — HAP10, TRS17, TRS18, TRS21, TRS22, FY001
+- Ran full inspection on all 8 datasets — shape, nulls, duplicates, value counts
+- Confirmed all datasets are structurally sound and ready for cleaning
+
+**Key decisions made:**
+- Filled HAP10 nulls with 0 — confirmed as HAP scheme rollout gap in 2015/2016
+- Skipped employment by county — not published at county level on CSO PxStat
+- Kept TRS datasets despite 2019 only — last pre-COVID stable baseline year
+- Used Census years 2011, 2016, 2022 for population
+
+**Outcome:** All 8 datasets collected and inspected. Notebook 01 complete and pushed to GitHub.
+
 
