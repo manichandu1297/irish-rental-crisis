@@ -50,7 +50,7 @@ This project builds a complete data platform that:
 ```
 | Phase | Status |
 |---|---|
-| Phase 1 — Data Collection | ✅ Complete |
+| Phase 1 — Data Collection | ✅ Completed |
 | Phase 2 — Data Cleaning & Combining | 🔄 In Progress |
 | Phase 3 — EDA & Statistical Analysis | ⏳ Pending |
 | Phase 4 — Feature Engineering & Preprocessing | ⏳ Pending |
