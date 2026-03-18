@@ -52,4 +52,59 @@
 
 **Outcome:** All 8 datasets collected and inspected. Notebook 01 complete and pushed to GitHub.
 
+## Day 4 — 13 March 2026
+**Phase:** 2 — Data Cleaning & Combining
+
+**What I did:**
+- Created Notebook 02 — Data Cleaning & Combining in Google Colab
+- Cleaned RIQ02 and RIA02 — dropped redundant columns, renamed VALUE, removed structural nulls
+- Extracted Year and Quarter number from Quarter string in RIQ02
+- Cleaned HAP10 — filled 47 nulls with 0, split LEA column into Area and County
+
+**Key decisions made:**
+- Dropped structural nulls from RIQ02 and RIA02 — these are expected gaps, not data errors
+- Split LEA column into Area and County across HAP10, TRS18, TRS22 — format was "Area, County"
+- Kept only Median Total Gross Income from TRS17/18 — more informative than rental income alone
+
+**Outcome:** Core rent datasets cleaned. HAP10 and LEA datasets restructured and ready.
+
+---
+
+## Day 5 — 14 March 2026
+**Phase:** 2 — Data Cleaning & Combining
+
+**What I did:**
+- Cleaned TRS17, TRS18, TRS21, TRS22 — filtered to relevant statistics only
+- Stripped council suffixes from county names in TRS17 and TRS21
+- Fixed truncated county names — Limerick and Waterford were cut short after suffix removal
+- Averaged Cork and Galway city/county entries to get one value per county
+- Cleaned FY001 — filtered to Both sexes, dropped State row, kept 26 counties × 3 census years
+
+**Key decisions made:**
+- Kept Median Rent % and 30% threshold from TRS21/22 — direct affordability measures
+- Averaged Cork and Galway — CSO reports city and county separately but FY001 treats them as one
+- Used 2022 census population only — most recent, closest to rent data timeframe
+
+**Outcome:** All 8 datasets fully cleaned and standardised. Zero nulls across all datasets confirmed.
+
+---
+
+## Day 6 — 15 March 2026
+**Phase:** 2 — Data Cleaning & Combining (Complete)
+
+**What I did:**
+- Built county level context dataset — joined TRS17, TRS21, and FY001 population on County
+- Split Dublin population equally across 4 sub-councils — FY001 only has one Dublin entry
+- Built LEA level context dataset — joined HAP10, TRS18, TRS22 on LEA
+- Validated both context datasets — zero nulls, correct row counts, clean column names
+- Exported all 4 clean datasets to /content/
+
+**Key decisions made:**
+- Split Dublin population equally across Dublin City, Dún Laoghaire-Rathdown, Fingal, South Dublin
+- Kept 29 county entries in county context — preserves Dublin sub-council granularity
+- Exported 2 rent files and 2 context files separately — different granularities should not be merged
+
+**Outcome:** 4 clean datasets exported — rent_quarterly_clean.csv (210,865 rows), rent_annual_clean.csv (109,380 rows), context_county_clean.csv (29 rows), context_lea_clean.csv (1,328 rows). Notebook 02 complete.
+
+
 
