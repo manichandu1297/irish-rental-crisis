@@ -51,8 +51,8 @@ This project builds a complete data platform that:
 | Phase | Status |
 |---|---|
 | Phase 1 — Data Collection | ✅ Completed |
-| Phase 2 — Data Cleaning & Combining | 🔄 In Progress |
-| Phase 3 — EDA & Statistical Analysis | ⏳ Pending |
+| Phase 2 — Data Cleaning & Combining |  ✅ Completed |
+| Phase 3 — EDA & Statistical Analysis | 🔄 In Progress |
 | Phase 4 — Feature Engineering & Preprocessing | ⏳ Pending |
 | Phase 5 — SQL Warehouse & Business Queries | ⏳ Pending |
 | Phase 6 — Machine Learning | ⏳ Pending |
