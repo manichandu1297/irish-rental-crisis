@@ -106,5 +106,44 @@
 
 **Outcome:** 4 clean datasets exported — rent_quarterly_clean.csv (210,865 rows), rent_annual_clean.csv (109,380 rows), context_county_clean.csv (29 rows), context_lea_clean.csv (1,328 rows). Notebook 02 complete.
 
+---
+
+## Day 7 — 19 March 2026
+**Phase:** 3 — EDA & Statistical Analysis
+
+**What I did:**
+- Built Notebook 03 — EDA & Statistical Analysis in Google Colab
+- Analysed national rent trends from 2008 to 2025 — quarterly and annual views
+- Explored county level rankings, Dublin premium, and commuter belt patterns
+- Analysed rent by property type and bedroom count including cost per bedroom
+- Calculated rent growth % by county since 2015 and since 2008
+- Investigated COVID impact — which counties dropped most and recovered fastest
+- Identified seasonal patterns across Q1–Q4
+- Ran affordability analysis using context datasets — 30% stress threshold by county
+- Analysed HAP demand growth 2015–2022 at national, county, and LEA level
+- Built correlation matrix across all county level features
+
+**Key decisions made:**
+- Used top 15 only for growth and COVID drop charts — full list was unreadable
+- Labelled only top 5 and bottom 5 points on scatter plots — avoids overlap
+- Removed plt.savefig() — no need to save plots to disk
+- Fixed YoY % change chart — 2022 bar was near-invisible, added value labels and minimum bar height
+- Switched HAP 2015 vs 2022 chart to show value labels on small 2015 bars
+
+**Key findings:**
+- National average rent grew ~70% from 2015 to 2025
+- Dublin is ~40% above the national average and the gap keeps widening
+- Q3 (Jul–Sep) is consistently the most expensive quarter
+- HAP demand grew every year without exception — state support is accelerating
+- Location and population are the strongest correlators with rent level
+- COVID caused a short dip in 2020 — all locations exceeded pre-COVID levels by 2022
+
+**Outcome:** Notebook 03 complete with 31 plots and key findings summary. Ready for feature engineering.
+```
+
+Commit message:
+```
+docs: add progress log — Day 7 EDA complete
+
 
 
