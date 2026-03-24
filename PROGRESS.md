@@ -139,11 +139,28 @@
 - COVID caused a short dip in 2020 — all locations exceeded pre-COVID levels by 2022
 
 **Outcome:** Notebook 03 complete with 31 plots and key findings summary. Ready for feature engineering.
-```
+---
 
-Commit message:
-```
-docs: add progress log — Day 7 EDA complete
+## Day 8 — 21 March 2026
+**Phase:** 4 — Feature Engineering & Preprocessing
+
+**What I did:**
+- Created Notebook 04 — Feature Engineering & Preprocessing in Google Colab
+- Dropped Quarter column — redundant since Year and Q_Num already extracted
+- Checked Value distribution — confirmed right skew, applied IQR capping and log transform
+- Engineered Is_Dublin binary flag — EDA confirmed Dublin is a clear outlier
+- Engineered Rent_Era grouping — Pre_Crisis, Peak, COVID, Post_COVID based on EDA findings
+- Applied target encoding to Location — replaced with mean rent per location
+- Applied one-hot encoding to PropertyType
+- Applied ordinal encoding to Bedrooms and Rent_Era
+
+**Key decisions made:**
+- Used target encoding for Location instead of label encoding — label encoding assigns arbitrary alphabetical numbers which mean nothing to the model
+- Dropped 79,728 aggregate rows where PropertyType = All property types and Bedrooms = All bedrooms — these are summary averages not real listings
+- Dropped Is_Commuter — low correlation with target, arbitrary county boundary definition
+- Bedroom mapping required fixing — actual values in data used different names than expected
+
+**Outcome:** Encoding complete. Aggregate rows dropped. Dataset reduced from 210,865 to 131,137 clean rows. Feature set partially built.
 
 
 
