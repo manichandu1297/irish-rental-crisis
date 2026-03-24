@@ -137,8 +137,9 @@
 - HAP demand grew every year without exception — state support is accelerating
 - Location and population are the strongest correlators with rent level
 - COVID caused a short dip in 2020 — all locations exceeded pre-COVID levels by 2022
-
+  
 **Outcome:** Notebook 03 complete with 31 plots and key findings summary. Ready for feature engineering.
+  
 ---
 
 ## Day 8 — 21 March 2026
@@ -161,6 +162,32 @@
 - Bedroom mapping required fixing — actual values in data used different names than expected
 
 **Outcome:** Encoding complete. Aggregate rows dropped. Dataset reduced from 210,865 to 131,137 clean rows. Feature set partially built.
+
+
+---
+
+## Day 9 — 23 March 2026
+**Phase:** 4 — Feature Engineering & Preprocessing (Complete)
+
+**What I did:**
+- Applied MinMaxScaler to Year and Q_Num columns
+- Built correlation heatmap — checked all features against Log_Value target
+- Dropped Rent_Era_Encoded — 0.96 correlation with Year_Scaled, completely redundant
+- Validated final feature set — zero nulls, correct dtypes
+- Exported rent_model_ready.csv to /content/
+
+**Key decisions made:**
+- Dropped Rent_Era_Encoded — too highly correlated with Year_Scaled, keeping both would cause multicollinearity
+- Kept weak features Q_Num and Bedrooms — XGBoost handles non-linear interactions that simple correlation won't capture
+- Final feature set: 11 features, 131,137 rows, zero nulls
+
+**Key findings from correlation matrix:**
+- Location_Encoded at 0.90 — strongest predictor by far, target encoding worked exactly as intended
+- Is_Dublin at 0.75 — Dublin premium confirmed as a strong signal
+- Year_Scaled at 0.19 — time trend is real but location matters more
+
+**Outcome:** rent_model_ready.csv exported — 131,137 rows, 13 columns. Notebook 04 complete.
+
 
 
 
