@@ -219,8 +219,8 @@ openai
 |---|---|
 | Phase 1 — Data Collection & Ingestion | ✅ Complete |
 | Phase 2 — Data Cleaning & Combining | ✅ Complete |
-| Phase 3 — EDA & Statistical Analysis | 🔄 In Progress |
-| Phase 4 — Feature Engineering & Preprocessing | ⏳ Pending |
+| Phase 3 — EDA & Statistical Analysis | ✅ Complete |
+| Phase 4 — Feature Engineering & Preprocessing | ✅ Complete |
 | Phase 5 — SQL Warehouse & Business Queries | ⏳ Pending |
 | Phase 6 — Machine Learning (Rent Prediction) | ⏳ Pending |
 | Phase 7 — Time Series Forecasting | ⏳ Pending |
