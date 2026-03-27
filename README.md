@@ -221,7 +221,7 @@ openai
 | Phase 2 — Data Cleaning & Combining | ✅ Complete |
 | Phase 3 — EDA & Statistical Analysis | ✅ Complete |
 | Phase 4 — Feature Engineering & Preprocessing | ✅ Complete |
-| Phase 5 — SQL Warehouse & Business Queries | ⏳ Pending |
+| Phase 5 — SQL Warehouse & Business Queries | 🔄 In Progress |
 | Phase 6 — Machine Learning (Rent Prediction) | ⏳ Pending |
 | Phase 7 — Time Series Forecasting | ⏳ Pending |
 | Phase 8 — Power BI Dashboard | ⏳ Pending |
