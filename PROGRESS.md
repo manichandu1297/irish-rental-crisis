@@ -188,5 +188,32 @@
 
 **Outcome:** rent_model_ready.csv exported — 131,137 rows, 13 columns. Notebook 04 complete.
 
+## Day 10 — 26 March 2026
+**Phase:** 5 — SQL Warehouse & Business Queries (First Half)
+
+**What I did:**
+- Installed PostgreSQL in Google Colab and set up connection via SQLAlchemy
+- Created 4 staging tables (stg_rent_quarterly, stg_rent_annual, stg_context_county, stg_context_lea)
+- Loaded all 4 clean CSVs from Notebook 02 into staging — 320,625 rows total ingested successfully
+- Built 3 dimension tables:
+  - `dim_location` — 434 unique locations with location_group classification (Dublin, Cork, Galway, Commuter Belt, Other) and is_dublin flag
+  - `dim_county` — 29 counties with affordability stress flag (is_stress_county = 1 if rent_pct_disposable_income >= 30%)
+  - `dim_time` — 42 time periods with rent_era classification (Pre-Crisis, Peak, COVID, Post-COVID)
+- Built 2 fact tables via dimension joins:
+  - `fact_rent_quarterly` — 210,865 rows enriched with location_group, is_dublin, rent_era
+  - `fact_rent_annual` — 109,380 rows enriched with location_group, is_dublin
+- Created 6 performance indexes on year, location, is_dublin, rent_era columns
+
+**Key decisions made:**
+- Used LEFT JOINs in fact tables instead of INNER JOIN — preserves all rent records even if location dimension lookup fails
+- Built rent_era in dim_time based on year thresholds from EDA findings — Pre_Crisis (≤2017), Peak (2018-2019), COVID (2020-2021), Post_COVID (2022+)
+- Target encoded location classification required manual CASE WHEN for Dublin/Cork/Galway/Commuter Belt — regex patterns match location names to region
+- Created indexes only on frequently filtered columns in fact tables — query performance optimisation for Power BI
+- Decided to keep staging tables intact post-load — allows audit trail and data validation
+
+**Outcome:** Complete star schema built. Staging (4 tables), Dimension (3 tables), Fact (2 tables), Indexes (6). All 320,625 rows loaded with zero errors.
+
+
+
 
 
